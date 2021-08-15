@@ -44,7 +44,7 @@
 
     --animation_duration:300ms;
 
-    
+
   
 
 }
@@ -61,7 +61,7 @@ html{
 }
 body{
 
-    font-family: "Open Sans";
+font-family: "Open Sans", sans-serif;
     margin: 0;
     cursor: default;
 }
@@ -87,3 +87,7 @@ button{
 }
 
 /*  */
+
+.home__avatar{
+    width: 55px;
+}

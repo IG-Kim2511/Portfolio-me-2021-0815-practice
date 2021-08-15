@@ -5,13 +5,248 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practice</title>
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Source+Sans+Pro:ital,wght@1,900&display=swap"
+    rel="stylesheet"
+  />
+
     <link rel="stylesheet" href="style.css">
+
+    <script
+    src="https://kit.fontawesome.com/4a5f50cc1d.js"
+    crossorigin="anonymous"
+  ></script>
+
 </head>
 <body>
-    <section>
-        d
+
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fas fa-star-of-life"></i>
+            <a href="#">ig kim</a>
+        </div>
+
+        <ul class="navbar__menu">
+
+            <!-- js 60, data- -->
+            <li class="navbar__menu__item active" data-link="#home">home</li>
+            <li class="navbar__menu__item"  data-link="#about">about</li>
+            <li class="navbar__menu__item"  data-link="#skills">skills</li>
+            <li class="navbar__menu__item" data-link="#work">works</li>
+            <li class="navbar__menu__item" data-link="#testimonial">testimonial</li>
+            <li class="navbar__menu__item" data-link="#contact">contact</li>
+        </ul>
+
+        <!--  -->
+        <button class-'navbar__toggel-btn'>
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </nav>
+
+
+    <!-- home -->
+    <section id="home">
+        <div class="home__container">
+
+            <img 
+            class="home__avatar"  src="img/ghost.png" alt="photo">
+            <h1 class="home__title">hi1</h1>
+            <h2>hello2</h2>
+            <button class="home__contact">contact</button>
+
+
+        </div>
+        
     </section>
 
+    <!-- about -->
+
+    <section id="about" class="section">
+        <div class="section__container">
+
+            <!--  -->
+            <h1>about me</h1>
+            <p>hi</p>
+            <div class="about__majors">
+                <div class="major">
+                    <div class="major__icon"> <i class="fab fa-html5"></i> </div>
+                    <h2 class="major__title">thml</h2>
+                </div>
+                <div class="major">
+                    <div class="major__icon"> <i class="fab fa-html5"></i> </div>
+                    <h2 class="major__title">css</h2>
+                </div>
+                <div class="major">
+                    <div class="major__icon"> <i class="fab fa-html5"></i> </div>
+                    <h2 class="major__title">js</h2>
+                </div>
+                <div class="major">
+                    <div class="major__icon"> <i class="fab fa-html5"></i> </div>
+                    <h2 class="major__title">react</h2>
+                </div>
+                <div class="major">
+                    <div class="major__icon"> <i class="fab fa-html5"></i> </div>
+                    <h2 class="major__title">git</h2>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="about__jobs">
+                <div class="job">
+                    <img src="./img/iu (4).jpg" alt="" class="job__logo" >
+                    <div class="job__description">
+                        <div class="job__name">
+                            hi
+                        </div>
+                        <p class="job--period">2122</p>
+                    </div>
+                </div>
+                <div class="job">
+                    <img src="./img/iu (13).jpg" alt="" class="job__logo" >
+                    <div class="job__description">
+                        <div class="job__name">
+                            hi
+                        </div>
+                        <p class="job--period">2122</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- skills -->
+    <section id="skills" class="section">
+        <div class="section__container">
+
+            <h1>skills</h1>
+            <h2>skill</h2>
+            <p>hi</p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>html</span>
+                            <span>90%</span>
+                        </div>
+
+                        <div class="skill__bar"> <!-- js -->
+                            <div class="skill__value" style="width: 70%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>css</span>
+                            <span>90%</span>
+                        </div>
+
+                        <div class="skill__bar"> <!-- js -->
+                            <div class="skill__value" style="width: 70%;"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>js</span>
+                            <span>90%</span>
+                        </div>
+
+                        <div class="skill__bar"> <!-- js -->
+                            <div class="skill__value" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="skillset__right">
+
+                    <div class="tools">
+                        <h3 class="skillset__title">tools</h3>
+                        <ul>
+                            <li><span>vsc</span></li>
+                            <li><span>intel</span></li>
+                            <li><span>and</span></li>
+                            <li><span>ios</span></li>
+                            <li><span>sketch</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="etc">
+                        <h3 class="skillset__title">etc</h3>
+                        <ul class="etc__list">
+                            <li><span>git</span></li>
+                            <li><span>scrum</span></li>
+                            <li><span>math</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+    
+
+    <!-- work/ projects -->
+
+    <section id="work" class="section"> 
+        <div class="section__container">
+            <h1>my work</h1>
+            <h3>projects</h3>
+
+            <!-- work categories -->
+            <div class="work__categories">
+                <!-- js 72. selected -->
+                <!-- js 68. data-filter -->
+                <button class="category__btn selected" data-filter="*">
+                    all
+                    <span class="category__count">8</span>
+                </button>
+                <button class="category__btn selected" data-filter="front-end">
+                    front
+                    <span class="category__count">8</span>
+                </button>
+                <button class="category__btn selected" data-filter="back-end">
+                    back
+                    <span class="category__count">8</span>
+                </button>
+                <button class="category__btn selected" data-filter="mobile">
+                    mobile
+                    <span class="category__count">8</span>
+                </button>
+            </div>
+
+
+            <!-- work projects -->
+
+            <div class="work__projects">
+
+
+                
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+    <section>
+
+
+
+
+    </section>
+
+
     <script src="script.js"></script>
+
+
 </body>
 </html>
