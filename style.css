@@ -197,10 +197,103 @@ background: url("./img/back-dot.png") center no-repeat;
 
 /* section */
 .section{
+   
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 50px;
+    padding-top: 80px;
+
+}
+
+.section__container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* about */
+.about__majors{
+
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.major{
+ 
+    margin-bottom: 38px;
+}
+
+.major__icon{
+
+
+
+
+    width: 170px;
+    height: 170px;
+    line-height: 170px;
+
+    border: 1px solid var(--color-blue);
+    border-radius: 50%;
+    color: blue;
+    font-size: 70px;
+
+    margin: auto;
+    margin-bottom: 16px;
+
+}
+
+.major__icon:hover i{
+
+
+    color: orange;
+    transform: rotate(35deg) scale(1.2);
+}
+
+
+
+.major__title,
+.major__description{
     background-color:yellow;
 
-    
+    color: orange;
+
 }
+
+.major__description{
+    font-size: var(--font-size-small);
+}
+
+/* about jobs */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
