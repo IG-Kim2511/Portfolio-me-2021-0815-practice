@@ -126,6 +126,57 @@ button{
     padding: 16px;
 }
 
+/* js 72 */
+
+.navbar__menu__item:hover{
+    border-color: var(--color-strong-orange);
+    background-color:var(--color-blue);
+}
+
+
+
+.navbar__logo{
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+}
+
+/* toggle btn */
+
+.navbar__toggle-btn{
+    position: absolute;
+    top: 24px;
+    right: 32px;
+
+    font-size: 24px;
+    color: var(--color-blue);
+
+    /* css 12 */
+    display: none;
+
+}
+
+/* home */
+#home{
+    
+}
+
+
+
+
+@media screen and (max-webkit:768px){
+    :root{
+
+    }
+
+    /* css 12 */
+    .navbar__toggle-btn{
+        display:block;
+
+        top: 16px;
+        right: 16px;
+        font-size: var(--font-medium);
+    }
+}
 
 
 
