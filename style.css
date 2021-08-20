@@ -260,9 +260,10 @@ background: url("./img/back-dot.png") center no-repeat;
 
 .major__title,
 .major__description{
-    background-color:yellow;
+
 
     color: orange;
+    
 
 }
 
@@ -272,8 +273,39 @@ background: url("./img/back-dot.png") center no-repeat;
 
 /* about jobs */
 
+.job{
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+.job__description{
+    
+    margin: 0 16px;
+    text-align: left;
+    
+    
+    
+}
+
+.job__name,
+.job--period{
+    background-color:yellow;
 
 
+    color: var(--color-grey);
+}
+
+.job__name{
+    font-size: var(--font-small);
+
+}
+.job--period{
+font-size: var(--font-micro);
+}
+
+/* skill */
 
 
 
