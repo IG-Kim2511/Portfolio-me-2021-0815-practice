@@ -291,7 +291,7 @@ background: url("./img/back-dot.png") center no-repeat;
 
 .job__name,
 .job--period{
-    background-color:yellow;
+  
 
 
     color: var(--color-grey);
@@ -307,11 +307,113 @@ font-size: var(--font-micro);
 
 /* skill */
 
+#skills{
+
+    background-color: var(--color-yellow);
+}
+.skillset{
+    
+
+    background-color: var(--color-white);
+    display: flex;
+
+    margin: 20px 0;
+
+}
+
+.skillset__left{
+    background-color: orange;
+    flex-basis: 60%;
+    padding: 20px 40px;
+}
+
+.skillset__right{
+    flex-basis: 40%;
+}
+
+.skill{
+    margin-bottom: 32px;
+}
+
+.skill__description{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+}
+
+
+.skill__bar{
+    background-color:  white;
+    width: 100%;
+    height: 3px;
+}
+
+.skill__value{
+    height: 3px;
+    background-color: red;
+}
+
+.tools{
+    background-color: var(--color-dark-white);
+}
+
+.tools,
+.etc{
+    padding: 20px;
+}
+
+/* work */
+
+
+.work__categories{
+    background-color: #2ec4b6;
+    margin: 40px;
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+.project__img{
+    /* background-color: yellow; */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* js 68 */
+
+.project.invisible{
+
+}
+
+.project:hover{
+    background-color: yellow;
+
+}
+
+.project__description{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 
