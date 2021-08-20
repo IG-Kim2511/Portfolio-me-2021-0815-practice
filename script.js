@@ -17,3 +17,4 @@ document.addEventListener("scroll",()=>{
 
 });
 
+/* js 72 */

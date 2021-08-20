@@ -410,6 +410,7 @@ font-size: var(--font-micro);
 
 /* css 14 */
 
+
 .category__btn.selected .category__count,
 .category__btn:hover .category__count{
     opacity: 1;
