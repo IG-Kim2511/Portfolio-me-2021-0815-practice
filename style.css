@@ -40,9 +40,9 @@
   
     --weight-regular: 400;
 
-    --size-border-radius: 4px;
+    --size-border-radius-4px: 4px;
 
-    --animation_duration:300ms;
+    --animation_duration-300ms:300ms;
 
 
   
@@ -113,7 +113,7 @@ button{
     padding: 8px 12px;
     margin: 0 4px;
     cursor: pointer;
-    border-radius: var(--size-border-radius);
+    border-radius: var(--size-border-radius-4px);
     border: 1px solid transparent;
 
 }
@@ -187,7 +187,7 @@ background: url("./img/back-dot.png") center no-repeat;
     margin: 24px;
     padding: 8px 12px;
 
-    transition: all var(--animation_duration) ease; 
+    transition: all var(--animation_duration-300ms) ease; 
 }
 
 
@@ -369,12 +369,59 @@ font-size: var(--font-micro);
 
 
 .work__categories{
-    background-color: #2ec4b6;
+    /* background-color: #2ec4b6; */
     margin: 40px;
 }
 
+.category__btn{
+    /* background-color: #2ec4b6; */
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: var(--font-regular);
+    padding: 8px 48px;
+}
 
 
+.category__count{
+    /* background-color: #2ec4b6; */
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+
+    background-color: blue;
+    border-radius: 50%;
+    color: grey;
+
+
+    display: inline-block;
+
+    /* css 14 */
+
+
+    position: relative;
+    top: -20px;
+    left: 4px;
+
+    opacity: 0;
+    transition: all var(--animation_duration-300ms) linear;
+
+
+}
+
+/* css 14 */
+
+.category__btn.selected .category__count,
+.category__btn:hover .category__count{
+    opacity: 1;
+    top: 0;
+}
+
+/* js 72 */
+.category__btn.selected,
+.category__btn:hover{
+    background-color: #2ec4b6;
+    color: orange;
+}
 
 
 
