@@ -17,4 +17,23 @@ document.addEventListener("scroll",()=>{
 
 });
 
-/* js 72 */
+/* js 72 btn effect for currently selected*/
+
+
+const workBtnContainer = document.querySelector(".work__categories");
+const projectContainer= document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+
+workBtnContainer.addEventListener("click",(e)=>{
+    
+    const categorySelected = document.querySelector('.category__btn.selected');
+
+    if(categorySelected !=null){
+        categorySelected.classList.remove('selected');
+    }
+    
+    e.target.classList.add("selected");
+
+
+
+});
