@@ -20,6 +20,17 @@ document.addEventListener("scroll",()=>{
 
 /* js 90 arrow  up button */
 
+document.addEventListener('scroll', ()=>{
+    const arrowUp =  document.querySelector(".arrow-up");
+
+    if( window.scrollY > innerHeight /2){
+        arrowUp.classList.add('visible');
+    } else if(window.scrollY < innerHeight/2){
+        arrowUp.classList.remove('visible');
+
+    }
+});
+
 
 /* js 72 btn effect for currently selected*/
 
