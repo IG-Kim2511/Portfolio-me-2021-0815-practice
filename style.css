@@ -520,6 +520,39 @@ button {
 }
 
 /* scroll arrow */
+.arrow-up{
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+
+  position: fixed;
+
+  bottom: 50px;
+  left: 50px;
+
+  color: aqua;
+  column-rule-color: #eeeeee;
+  border-radius: 50%;
+
+  /* js 90  */
+
+  opacity: 0;
+
+  /* css30 */
+
+  pointer-events: none;
+
+  transition: all 300ms ease;
+}
+
+/* js 90 */
+
+.arrow-up.visible {
+  opacity: 1;
+
+  pointer-events: auto;
+}
+
 
 
 
