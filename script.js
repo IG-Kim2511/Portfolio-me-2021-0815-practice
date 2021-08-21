@@ -17,6 +17,27 @@ document.addEventListener("scroll",()=>{
 
 });
 
+/* js 60 click menu and scrolling */
+
+const navbarMenu = document.querySelector(".navbar__menu");
+
+navbar.addEventListener("click",(e)=>{
+
+    // console.log(e.target);
+    console.log(e.target.dataset.link);
+
+    const ETDL = document.querySelector(e.target.dataset.link);
+    ETDL.scrollIntoView({behavior: "smooth"});
+
+ 
+
+if(ETDL===null){
+    return;
+  
+}
+
+});
+
 
 /* js 90 arrow  up button */
 
