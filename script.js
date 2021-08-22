@@ -39,6 +39,64 @@ if(ETDL===null){
 });
 
 
+// js 60-2. contat me btn
+
+/* scroll into view
+
+
+selector
+
+*/
+
+// const homeContactBtn = document.querySelector(".home__contact");
+
+// homeContactBtn.addEventListener("click",()=>{
+//     scrollIntoView("#contact");
+// });
+
+
+
+
+// js 60-3
+
+function scrollFunction(params) {
+    const scroll_id =  document.querySelector(params);
+    scroll_id.scrollIntoView({behavior:"smooth"});
+    
+}
+
+const homeContactBtn = document.querySelector('.home__contact');
+
+homeContactBtn.addEventListener("click",()=>{
+    scrollFunction("#contact");
+});
+
+
+// 60-4
+
+const arrowUp = document.querySelector(".arrow-up");
+
+arrowUp.addEventListener("click",()=>{
+    scrollFunction("#home");
+});
+
+
+
+
+/* js74 navbar btn for small screen
+ */
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+
+navbarToggleBtn.addEventListener("click",()=>{
+    navbarMenu.classList.toggle("open");
+});
+
+
+
+
+
+
+
 /* js 90 arrow  up button */
 
 document.addEventListener('scroll', ()=>{
