@@ -92,6 +92,19 @@ navbarToggleBtn.addEventListener("click",()=>{
 });
 
 
+// js 94 home transparents
+
+const homeContainer = document.querySelector(".home__container");
+const homeAvatar = document.querySelector(".home__avatar");
+const homeHeight  = homeAvatar.getBoundingClientRect();
+
+
+document.addEventListener("scroll",()=>{ 
+  homeAvatar.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+
+
 
 
 
