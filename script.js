@@ -106,6 +106,39 @@ document.addEventListener("scroll",()=>{
 
 
 
+// js 68 project- & list dataset
+const workBtnContainer = document.querySelector(".work__categories");
+const projectContainer = document.querySelector(".work__projects");
+const projects = document.querySelectorAll(".project");
+
+workBtnContainer.addEventListener("click",(e)=>{
+
+// 68-1 dataset
+
+const filter = e.target.dataset.filter || e.target.parentNoed.dataset.filter;
+if(filter==null){return;}
+
+// 68-2
+
+projects.forEach((a_project)=>{
+
+    if (filter==="*"|| filter === projectContainer.dataset.type) {
+        a_project.classList.remove("invisible");
+        
+    } else {
+        
+    }
+})
+
+
+});
+
+
+
+
+
+
+
 
 
 
