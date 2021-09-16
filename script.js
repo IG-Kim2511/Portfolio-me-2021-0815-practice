@@ -130,6 +130,20 @@ projects.forEach((a_project)=>{
     }
 })
 
+projectContainer.classList.add("anim-out");
+
+setTimeout(() => {
+    projectContainer.classList.remove("anim-out");
+}, 300);
+
+const categorySelected =  document.querySelector(".category__btn.selected");
+if (categorySelected != null) {
+    categorySelected.classList.remove("selected");
+
+    
+    
+}
+e.target.classList.add("selected");
 
 });
 
